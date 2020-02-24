@@ -13,7 +13,7 @@ $gray: hsl(0, 0%, 59%)
 $very-dark-blue: hsl(209, 33%, 12%)
 
 // Breakpoints
-
+$breakpoint1: 600px
 
 // Mobile first approach
 
@@ -25,14 +25,15 @@ $very-dark-blue: hsl(209, 33%, 12%)
     font-family: 'Libre Franklin'
     font-weight: 300
 .page-wrapper
-    padding: 13%
+    margin: 13%
     display: block
+    max-width: 600px
 .launching-soon
     display: flex
     flex-direction: column
     align-items: center
 img.logo
-    width: 55px
+    height: 60px
     padding-bottom: 2rem
 .launching-soon h1
     font-weight: 700
@@ -95,3 +96,29 @@ footer .attribution
 footer .attribution a
     font-size: 0.5rem
     color: $blue
+
+// Deskop Screen
+@media screen and (min-width: $breakpoint1)
+    .page-wrapper
+        margin: 60px auto 40px auto
+    img.logo
+        height: 70px
+    .launching-soon h1
+        font-size: 2.5rem
+    .launching-soon h1 span
+        font-size: 2.5rem
+    .launching-soon p
+        font-size: 1rem
+    .notify-container
+        flex-direction: row
+    .notify-container input
+        font-size: 0.8rem
+        margin: 0
+        padding: 15px 25px
+        border-radius: 25px
+    .notify-container button
+        font-size: 0.8rem
+        width: 40%
+        margin-left: 15px
+        padding: 15px 25px
+        border-radius: 25px
