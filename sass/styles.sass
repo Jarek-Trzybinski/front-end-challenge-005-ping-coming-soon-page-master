@@ -49,6 +49,8 @@ img.logo
     flex-direction: column
     align-items: center
     width: 100%
+.input-container
+    width: 100%
 .notify-container input
     width: 100%
     border: $pale-blue 1px solid
@@ -57,6 +59,19 @@ img.logo
     font-size: 0.6rem
     letter-spacing: 0.03rem
     margin-bottom: 0.5rem
+    outline: none
+.notify-container input.invalid
+    border: $ligt-red 1px solid
+    margin-bottom: 0.1rem
+.input-container
+    display: flex
+    flex-direction: column
+.notify-container input.invalid + small
+    color: red
+    font-style: italic
+    text-align: center
+    font-size: 0.5rem
+    margin-bottom: 1rem
 .notify-container button
     width: 100%
     color: white
@@ -67,6 +82,9 @@ img.logo
     border: 0
     border-radius: 20px
     padding: 10px 25px
+    outline: none
+.notify-container button:hover
+    background: $pale-blue
 img.illustration-dashboard
     width: 100%
     margin: 60px 0
@@ -111,11 +129,23 @@ footer .attribution a
         font-size: 1rem
     .notify-container
         flex-direction: row
+        align-items: flex-start
     .notify-container input
         font-size: 0.8rem
         margin: 0
         padding: 15px 25px
         border-radius: 25px
+        margin-bottom: 0.5rem
+    .notify-container input.invalid
+        font-size: 0.8rem
+        margin: 0
+        padding: 15px 25px
+        border-radius: 25px
+        margin-bottom: 0.5rem
+    .notify-container input.invalid + small
+        font-size: 0.6rem
+        text-align: left
+        margin-left: 1rem
     .notify-container button
         font-size: 0.8rem
         width: 40%
