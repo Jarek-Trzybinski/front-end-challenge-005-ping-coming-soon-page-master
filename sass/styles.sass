@@ -4,7 +4,7 @@
 $blue: hsl(223, 87%, 63%)
 
 // Secondary colors
-$pale-blue: hsl(223, 100%, 88%)
+$pale-blue: hsl(223.6, 86.8%, 70.2%)
 $ligt-red: hsl(354, 100%, 66%)
 
 // Neutral colors
@@ -104,6 +104,9 @@ footer .icons i
     padding: 5px
     color: $blue
     margin: 3px
+footer .icons i:hover
+    background: $blue
+    color: white
 footer .copyright
     color: $gray
     padding: 15px
@@ -114,7 +117,6 @@ footer .attribution
 footer .attribution a
     font-size: 0.5rem
     color: $blue
-
 // Deskop Screen
 @media screen and (min-width: $breakpoint1)
     .page-wrapper

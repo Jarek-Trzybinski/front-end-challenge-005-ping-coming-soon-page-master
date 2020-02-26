@@ -44,7 +44,7 @@ img.logo {
 
 .notify-container input {
   width: 100%;
-  border: #c2d3ff 1px solid;
+  border: #7195f5 1px solid;
   border-radius: 20px;
   padding: 10px 25px;
   font-size: 0.6rem;
@@ -80,7 +80,7 @@ img.logo {
   outline: none; }
 
 .notify-container button:hover {
-  background: #c2d3ff; }
+  background: #7195f5; }
 
 img.illustration-dashboard {
   width: 100%;
@@ -104,6 +104,10 @@ footer .icons i {
   padding: 5px;
   color: #4f7df3;
   margin: 3px; }
+
+footer .icons i:hover {
+  background: #4f7df3;
+  color: white; }
 
 footer .copyright {
   color: #969696;
